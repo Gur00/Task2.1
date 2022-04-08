@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Unit</string>
+    <string name="mytext">Unit Convertor</string>
+    <string-array name="units">
+        <item>Meters</item>
+        <item>Celsius</item>
+        <item>Kilograms</item>
+
+    </string-array>
+
+</resources>
