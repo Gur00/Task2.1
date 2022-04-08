@@ -1,0 +1,107 @@
+//this is the Layout File
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_gravity="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="150dp"
+        android:background="@color/purple_200"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/display1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/purple_200"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/display2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/purple_200"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/display3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/purple_200"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageButton
+            android:id="@+id/imageButton_scale"
+            android:adjustviewbond = "true"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="@drawable/imageButton_scale"
+            app:srcCompat="@drawable/scale" />
+
+        <ImageButton
+            android:id="@+id/imageButton_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:adjustviewbond="true"
+            android:onClick="@drawable/imageButton_weight"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/wei" />
+
+        <ImageButton
+            android:id="@+id/imageButton_cel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustviewbond="true"
+            android:scaleType="fitCenter"
+            android:onClick="@drawable/imageButton_cel"
+            app:srcCompat="@drawable/cel" />
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
